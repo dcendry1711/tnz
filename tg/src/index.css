@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+/*main layout*/
+
+main {
+    margin: 7em auto;
+    width: 320px;
+    height: 320px;
+    background: #F5F5F5;
+    border-radius: 15px;
+    padding: 1em;
+    text-align: center;
+}
+
+/*header section*/
+
+header > h1 {
+    font-size: 1.6rem;
+    margin-top: 1em;
+}
+
+header > p {
+    font-family: "Inter", sans-serif;
+    font-size: .8rem;
+    font-weight: 200;
+    margin: .5em 2em;
+}
+
+/*buttons section*/
+
+.btns-section {
+    display: flex;
+    width: 220px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1em auto;
+    gap: .5em;
+}
+
+.game-btn {
+    background: #FFFF;
+    border: none;
+    border-radius: 7px;
+    width: 36px;
+    height: 36px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/*roll btn */
+
+.roll-btn {
+    background: #5035FF;
+    color: #FFFF;
+    padding: 1em 3em;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 1em;
+}
