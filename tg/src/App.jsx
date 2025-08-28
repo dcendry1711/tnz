@@ -5,18 +5,14 @@ import Die from './components/Die'
 function App() {
 
   function allNewDice(){
-    const dieArr = []
-      for (let i = 0; i < 10 ; i++){
-        const randomNumber = Math.floor(Math.random() * 6 + 1)
-        dieArr.push(randomNumber)
-      }
-    return dieArr
+    return new Array(10).fill(0).map(() => ({value: Math.floor(Math.random()* 6 + 1), isHeld: false}))
   }
 
   const [dies, setDies] = useState(allNewDice)
 
+
   const btnsEl = dies.map(die => {
-    return <Die value={die}/>
+    return <Die value={die.value} isHeld={die.isHeld}/>
   })
 
   function reRoll(){
