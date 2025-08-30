@@ -57,7 +57,7 @@ function App() {
   }
 
   //state trzymający info dot. ilości wykonanych rollów podczas gry
-  
+
   const [rolls, setRolls] = useState(0)
 
   return (
@@ -75,7 +75,8 @@ function App() {
           {isGameOver ? 'New Game' : 'ROLL'}
       </button>
 
-      <h2 className='rolls-counter'>{isGameOver? `Your rolls score is: ${rolls}` : `Roll counter: ${rolls}`}</h2>
+
+    <h2 className='rolls-counter'>{isGameOver? `Your rolls score is: ${rolls}` : `Roll counter: ${rolls}`}</h2>
 
     {isGameOver && <Confetti />}
     </main>
