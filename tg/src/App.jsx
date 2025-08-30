@@ -11,8 +11,8 @@ function App() {
   const [dies, setDies] = useState(allNewDice)
 
 
-  const btnsEl = dies.map(die => {
-    return <Die value={die.value} isHeld={die.isHeld}/>
+  const btnsEl = dies.map((die,index) => {
+    return <Die key={index} value={die.value} isHeld={die.isHeld}/>
   })
 
   function reRoll(){
